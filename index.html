@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Children's Promise</title>
+</head>
+<body>
+    <div class="maincontainer" id="homesection">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="Logo" />
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#homesection">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutsection">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#programsection">Programs</a>
+                        </li>
+                        <li>
+                            <a href="#educationsection">Education</a>
+                        </li>
+                        <li>
+                            <a href="#gallerysection">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#joinsection">Join Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Empowering the <span>Next Generation</span></h1>
+            <p>Our mission is to empower marginalized communities and create a more equitable world. We achieve this by providing essential services such as [list of services, e.g., education, healthcare, shelter, legal aid].Through our innovative programs and partnerships,we strive to address the root causes of poverty, inequality, and social injustice.<span>Join us in making a lasting impact on the lives of those in need.</span></p>
+            <button>Start with A Little</button>
+        </div>
+    </div>
+
+    <!--Homesection end here-->
+<!--About Section Start here -->
+    <section class="fullcontainer" id="aboutsection">
+        <div class="container">
+            <h2 class="sectiontitle">About Us</h2>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Our Mission')">Our Mission</p>
+                <p class="tab-links" onclick="opentab('Our Story')">Our Story</p>
+                <p class="tab-links" onclick="opentab('Our Team')">Our Team</p>
+            </div>
+            <div class="tab-contents active-tab" id="Our Mission">
+                <p>"Our mission is to empower poor children by providing essential services such as education, healthcare, shelter, and other vital resources. We are committed to ensuring that every child has the opportunity to lead a healthy, educated, and secure life, breaking the cycle of poverty and building a brighter future."</p>
+            </div>
+            <div class="tab-contents" id="Our Story">
+                <p>In 2022, a small group of passionate individuals came together with a shared vision: to create a world where no child is left behind due to poverty. Witnessing the harsh realities faced by children in underserved communities, we knew that something had to change. Too many children were deprived of basic necessities like education, healthcare, and a safe place to call home—essentials that every child deserves.
+
+                    We started our journey by reaching out to the most vulnerable children in our community, offering them not just temporary relief, but a path to a brighter future. What began as a modest effort to provide school supplies and healthcare soon grew into a comprehensive initiative, addressing the broader needs of these children. With the support of like-minded volunteers and donors, we were able to build schools, establish health clinics, and create safe shelters, transforming the lives of countless children.
+                    
+                    Over the years, our NGO has expanded its reach, touching the lives of thousands of children across various regions. Every child we help has a unique story, and we are proud to be a part of their journey. Our work is far from over, and we continue to strive for a world where every child has the opportunity to learn, grow, and thrive, regardless of their circumstances.
+                    
+                    At the heart of our organization is the belief that every child deserves a chance. Together, we are building a future where children are empowered, supported, and given the tools they need to break free from the cycle of poverty.</p>
+            </div>
+            <div class="tab-contents" id="Our Team">
+                <div class="card">
+                    <img src="team 1.jpg" alt="Abhinav photo" />
+                    <h3>Abhinav Raj - Founder & Ex. Director</h3>
+                    <p>
+                      Abhinav Raj is the visionary behind <span>Children's Promise</span>, dedicated to uplifting poor children through essential services like education, healthcare, and shelter. With a background in social work, Abhinav has over 2 years of experience working with underprivileged communities. His passion for creating lasting change drives the organization's mission to provide every child with the tools they need to succeed. Under his leadership, the NGO has expanded its reach and impact, transforming countless lives along the way.
+                    </p>
+                  </div>
+                  <div class="card">
+                    <img src="team2.jpg" alt="Alka photo" />
+                    <h3>Alka - Program Director</h3>
+                    <p>
+                      Alka serves as the Program Director at <span>Children's Promise</span>, bringing her extensive experience in child development and community outreach to the team. With a deep commitment to improving the lives of disadvantaged children, she oversees the design and implementation of the NGO’s education, healthcare, and shelter programs. Alka’s expertise in curriculum development, ensures that every initiative is impactful and sustainable. Her dedication to creating a nurturing environment for every child is at the core of the organization’s success.
+                    </p>
+                  </div>
+                  <div class="card">
+                      <img src="team3.jpg" alt="Aditi photo" />
+                      <h3>Aditi -Outreach Coordinator</h3>
+                      <p>
+                          Aditi Sinha is the Communications and Outreach Coordinator at <span>Children's Promise</span>, playing a crucial role in raising awareness and building connections for the organization. With a background in communications, Aditi is passionate about sharing the stories of the children and communities the NGO serves. She manages the organization’s public relations, social media, and community engagement efforts, ensuring that the message of hope and change reaches a wide audience. Aditi’s creativity and commitment help foster strong relationships with donors, volunteers, and partners, driving the mission forward.
+                      </p>
+                    </div>
+                </div>
+            
+                <script>
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+            
+                    function opentab(tabname) {
+                        for (let tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (let tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                </script>
+            </div>
+    </section>
+    <!--About Section Ends Here-->
+
+    <!--programs start here-->
+    <section class="programs" id="programsection">
+        <div class="container">
+            <h2 class="sectiontitle">programs</h2>
+            <div class="boxcontainer">
+                <div class="box">
+                    <div class="cardimage"></div>
+                    <div class="programtitle">Education to every child</div>
+                    <div class="donationcount">
+                        Donation Goal : <span>$9845</span>
+                    </div>
+                    <button>Donate Now</button>
+                </div>
+                <!--box end-->
+                <div class="box">
+                    <div class="cardimage"></div>
+                    <div class="programtitle">Made life easier for them</div>
+                    <div class="donationcount">
+                        Donation Goal : <span>$9845</span>
+                    </div>
+                    <button>Donate Now</button>
+                </div>
+                <!--box end here-->
+                <div class="box">
+                    <div class="cardimage"></div>
+                    <div class="programtitle">dedicating to helping kids</div>
+                    <div class="donationcount">
+                        Donation Goal : <span>$9845</span>
+                    </div>
+                    <button>Donate Now</button>
+                </div>
+                <!--box end here-->
+                <div class="box">
+                    <div class="cardimage"></div>
+                    <div class="programtitle">Clean Water for people</div>
+                    <div class="donationcount">
+                        Donation Goal : <span>$9845</span>
+                    </div>
+                    <button>Donate Now</button>
+                </div>
+                <!--box end here-->
+            </div>
+        </div>
+    </section>
+    <!--programs ends here-->
+
+    <!--education start here-->
+    <section class="education" id="educationsection">
+        <video autoplay muted loop class="videoplayer">
+            <source src="video/childrens.mp4" type="video/mp4" />
+            your browser does not support HTML5 video
+        </video>
+
+        <div class="container">
+            <div class="sectiontitle">Education</div>
+            <div class="educationcontainer">
+                <h3>Education Is Essential For <br>
+                <strong>BETTER FUTURE </strong>
+                </h3>
+                <P>
+                    Education is the foundation upon which a better future is built. It empowers individuals with knowledge, skills, and the confidence to pursue their dreams, break the cycle of poverty, and contribute positively to society. For underprivileged children, education is a powerful tool that can transform their lives, offering them opportunities they might never have had otherwise. By investing in education, we are not only improving individual futures but also creating a brighter, more equitable world for everyone.
+                </P>
+                <button>EXPLORE NOW</button>
+            </div>
+        </div>
+    </section>
+    <!--education end here -->
+
+    <!--gallery starts here -->
+    <section class="gallery" id="gallerysection">
+        <div class="container">
+            <div class="sectiontitle">Gallery</div>
+
+            <div class="gallerycontainer">
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/1.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/2.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/3.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/4.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/5.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/6.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/7.jpg" alt="" />
+                </div>
+
+                <div class="item">
+                    <span class="title">Image Title</span>
+                    <img src="gallery/8.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--gallery section end here-->
+
+    <!--join section starts here-->
+    <section class="join" id="joinsection">
+        <div class="container">
+            <div class="jointitle">ADOPT A CHILD & <SPAN>SAVE LIVES</SPAN></div>
+        <P>When you adopt or sponsor a child, you become a lifeline for a young soul in need. Your support provides essential resources like education, healthcare, and a safe environment, giving a child the opportunity to break free from the cycle of poverty. By adopting a child, you are not just offering financial assistance; you are giving them hope, security, and the chance to dream of a brighter future. Your commitment can transform a life, empowering a child to grow into a healthy, educated, and confident adult. Every child deserves the opportunity to thrive, and by choosing to adopt, you are making an indelible impact on their life and the world.</P>
+        <button class="joinnow">Join Us</button>
+        <button class="adoptbtn">ADOPT A CHILD</button>
+    </div>
+    </section>
+
+    <!--join section ends here-->
+
+    <!--footer-->
+
+    <footer>
+        <div class="container">
+            <div class="newslettercontainer">
+                <img src="Logo.png" alt="logo">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex ut mollitia ipsum, facilis, quisquam soluta eum reprehenderit pariatur, voluptate molestiae voluptatem dolor amet beatae odio excepturi? Officia, reprehenderit accusamus?
+                </p>
+                <input type="text" placeholder="Enter your Email" />
+            </div>
+            <!--newslettercontainer-->
+            <div class="linkscontainer">
+                <div class="title">Useful Links</div>
+                <ul>
+                    <li>
+                        <a href="#homesection">Home</a>
+                    </li>
+                    <li>
+                        <a href="#aboutsection">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#programsection">Programs</a>
+                    </li>
+                    <li>
+                        <a href="#educationsection">Education</a>
+                    </li>
+                    <li>
+                        <a href="#gallerysection">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#joinsection">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!--linkscontainer-->
+
+            <div class="connectcontainer">
+                <div class="title">Connect with us</div>
+                <p>
+                    Prabhatam Heights,Tower-3 Flat-608, Patel Nagar Raisen Road <br>
+                     Bhopal- 462022
+                </p>
+                <p>
+                    Email:- abhinav2abhinav1234@gmail.com
+                </p>
+                <p> (+91) 8294830169 </p>
+            </div>
+            <!--connectcontainer-->
+        </div>
+    </footer>
+</body>
+</html>
